@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{901F95BB-0EF7-4A93-94B5-A8655FA8CA96}") = "OSDesign1", "OSDesign1\OSDesign1.pbxml", "{B495968F-7EA2-4156-A968-4DAA1A6E7539}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Generic CEPC  x86 Checked|Platform Builder (_TGTCPU) = Generic CEPC  x86 Checked|Platform Builder (_TGTCPU)
+		Generic CEPC  x86 Debug|Platform Builder (_TGTCPU) = Generic CEPC  x86 Debug|Platform Builder (_TGTCPU)
+		Generic CEPC  x86 Release|Platform Builder (_TGTCPU) = Generic CEPC  x86 Release|Platform Builder (_TGTCPU)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B495968F-7EA2-4156-A968-4DAA1A6E7539}.Generic CEPC  x86 Checked|Platform Builder (_TGTCPU).ActiveCfg = Generic CEPC  x86 Checked|Platform Builder (_TGTCPU)
+		{B495968F-7EA2-4156-A968-4DAA1A6E7539}.Generic CEPC  x86 Checked|Platform Builder (_TGTCPU).Build.0 = Generic CEPC  x86 Checked|Platform Builder (_TGTCPU)
+		{B495968F-7EA2-4156-A968-4DAA1A6E7539}.Generic CEPC  x86 Debug|Platform Builder (_TGTCPU).ActiveCfg = Generic CEPC  x86 Debug|Platform Builder (_TGTCPU)
+		{B495968F-7EA2-4156-A968-4DAA1A6E7539}.Generic CEPC  x86 Debug|Platform Builder (_TGTCPU).Build.0 = Generic CEPC  x86 Debug|Platform Builder (_TGTCPU)
+		{B495968F-7EA2-4156-A968-4DAA1A6E7539}.Generic CEPC  x86 Release|Platform Builder (_TGTCPU).ActiveCfg = Generic CEPC  x86 Release|Platform Builder (_TGTCPU)
+		{B495968F-7EA2-4156-A968-4DAA1A6E7539}.Generic CEPC  x86 Release|Platform Builder (_TGTCPU).Build.0 = Generic CEPC  x86 Release|Platform Builder (_TGTCPU)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
