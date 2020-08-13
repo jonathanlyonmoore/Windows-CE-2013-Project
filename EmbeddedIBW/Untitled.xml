@@ -1,0 +1,1274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:ew="urn:schemas-microsoft-com:embedded.unattend.internal.v2">
+    <settings pass="offlineServicing">
+        <component name="Microsoft-Windows-Audio-AudioCore" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Start_AudioSrv>2</Start_AudioSrv>
+            <Start_EndpointBuilder>2</Start_EndpointBuilder>
+        </component>
+        <component name="Microsoft-Windows-BaseCrashDumpSettings" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <CrashDumpEnabled>1</CrashDumpEnabled>
+        </component>
+        <component name="Microsoft-Windows-Embedded-DisablePrefetchSuperfetch" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <EnablePrefetcher>0</EnablePrefetcher>
+            <EnableSuperfetch>0</EnableSuperfetch>
+        </component>
+        <component name="Microsoft-Windows-MMCSS" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <Start>2</Start>
+            <SystemResponsiveness>20</SystemResponsiveness>
+        </component>
+        <component name="Microsoft-Windows-UPnPDeviceHost" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ServiceStartType>3</ServiceStartType>
+        </component>
+        <component name="Microsoft-Windows-UPnPSSDP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ServiceStartType>3</ServiceStartType>
+        </component>
+        <component name="Microsoft-Windows-explorer" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <IndexSearchFilesDefaultValue>2</IndexSearchFilesDefaultValue>
+            <NoSearchFilesDefaultValue>2</NoSearchFilesDefaultValue>
+            <Start_SearchFiles>2</Start_SearchFiles>
+            <UserSearchFilesDefaultValue>2</UserSearchFilesDefaultValue>
+            <CDefaultValue>1</CDefaultValue>
+            <GHideDefaultValue>0</GHideDefaultValue>
+            <GMenuDefaultValue>0</GMenuDefaultValue>
+            <GOpenDefaultValue>0</GOpenDefaultValue>
+        </component>
+        <component name="Microsoft-Windows-Networking-Internet_Authentication_Service_DataStore" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataStoreHostProcess />
+        </component>
+        <component name="Microsoft-Windows-Networking-Internet_Authentication_Service_DataStore" processorArchitecture="wow64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DataStoreHostProcess />
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-SystemRestore-Main" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DisableSR>1</DisableSR>
+        </component>
+    </settings>
+    <ew:servicing>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Accessibility-Tools" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Accessibility-Tools~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Active-Directory" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Active-Directory~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Additional-Wallpaper" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Additional-Wallpaper~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AntiMalware" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AntiMalware~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-AdobeReaderX" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-AdobeReaderX~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-Flash" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-Flash~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-OfficeExcelViewer2007" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-OfficeExcelViewer2007~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-OfficePowerPointViewer-2010" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-OfficePowerPointViewer-2010~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-SilverlightV" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-SilverlightV~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-SQLServerExpress-2008R2" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-SQLServerExpress-2008R2~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-SQLServerExpress-2012" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-SQLServerExpress-2012~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-AppCompat-WordViewer" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-AppCompat-WordViewer~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-ASPNET-45" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-ASPNET-45~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Backup-And-Restore" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Backup-And-Restore~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-BitLocker-Secure-Startup" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-BitLocker-Secure-Startup~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Bitmap-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Bitmap-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Bluetooth" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Bluetooth~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Boot-Experience" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Boot-Experience~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Chinese-Minority-Language-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Chinese-Minority-Language-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-ClearType-Tuner" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-ClearType-Tuner~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Color-Management" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Color-Management~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-COM-DTC-Application-Support" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-COM-DTC-Application-Support~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-COMPlus-MMC-Support" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-COMPlus-MMC-Support~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Computer-Management" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Computer-Management~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Credential-Roaming-Service" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Credential-Roaming-Service~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Custom-Shell-Launcher" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Custom-Shell-Launcher~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Devices-And-Printers-UI" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Devices-And-Printers-UI~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-DHCP-Server" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-DHCP-Server~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Diagnostic-Tools" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Diagnostic-Tools~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Dialog-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Dialog-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Direct-Show" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Direct-Show~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Disk-Defragmenter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Disk-Defragmenter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Disk-Management" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Disk-Management~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-DNS-Administration" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-DNS-Administration~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Edge-Gesture-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Edge-Gesture-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Embedded-Lockdown-Manager" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Embedded-Lockdown-Manager~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Embedded-Logon" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Embedded-Logon~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Encrypted-File-System" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Encrypted-File-System~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Enhanced-Storage" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Enhanced-Storage~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Enhanced-Write-Filter-Management-Tool" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Enhanced-Write-Filter-Management-Tool~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Enhanced-Write-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Enhanced-Write-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Error-Reporting-And-Solutions" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Error-Reporting-And-Solutions~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Event-Viewer" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Event-Viewer~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Extensible-Authentication-Protocol-Host" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Extensible-Authentication-Protocol-Host~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Extensible-Storage-Engine" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Extensible-Storage-Engine~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Fax-And-Scan" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Fax-And-Scan~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-File-Based-Write-Filter-Management-Tool" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-File-Based-Write-Filter-Management-Tool~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-File-Based-Write-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-File-Based-Write-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-File-History" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-File-History~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-File-System-Resource-Manager" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-File-System-Resource-Manager~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Firewall-UI" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Firewall-UI~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Get-Connected-Wizards" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Get-Connected-Wizards~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Help-Content" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Help-Content~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-HomeGroup" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-HomeGroup~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Identity" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Identity~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-IIS-Mgmt-6" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-IIS-Mgmt-6~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-IIS-NETFX35" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-IIS-NETFX35~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-IIS-ODBC-Logging" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-IIS-ODBC-Logging~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-IIS-WWW" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-IIS-WWW~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Image-Mastering-API" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Image-Mastering-API~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Internet-Authentication-Service" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Internet-Authentication-Service~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Internet-Connection-Sharing" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Internet-Connection-Sharing~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Internet-Explorer" version="10.0.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Internet-Explorer~31bf3856ad364e35~amd64~~10.0.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Internet-Printing" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Internet-Printing~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Japanese-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Japanese-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Japanese-Input-Method-Editor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Japanese-Input-Method-Editor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Keyboard-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Keyboard-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Kinect-Compatibility" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Kinect-Compatibility~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Korean-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Korean-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Korean-Input-Method-Editor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Korean-Input-Method-Editor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-LPD-Print-Service" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-LPD-Print-Service~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-LPKSetup" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-LPKSetup~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-LPR-Port-Monitor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-LPR-Port-Monitor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Maintenance-Scheduler" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Maintenance-Scheduler~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Microsoft-AC3-Encoder" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Microsoft-AC3-Encoder~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Microsoft-Dolby-Audio-Decoder" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Microsoft-Dolby-Audio-Decoder~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Microsoft-DTV-DVD-Audio-Decoder" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Microsoft-DTV-DVD-Audio-Decoder~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Microsoft-DTV-DVD-Video-Decoder" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Microsoft-DTV-DVD-Video-Decoder~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Microsoft-ISCSI-Initiator" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Microsoft-ISCSI-Initiator~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Middle-East-South-East-And-South-Asian-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Middle-East-South-East-And-South-Asian-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Middle-East-South-East-And-South-Asian-Supplemental-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Middle-East-South-East-And-South-Asian-Supplemental-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-MPEG-2-Audio-And-Video-Encoder" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-MPEG-2-Audio-And-Video-Encoder~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-MPEG-4-Decoders" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-MPEG-4-Decoders~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-MPEG-Layer-3-Audio-Codecs" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-MPEG-Layer-3-Audio-Codecs~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-MSMQ-AD" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-MSMQ-AD~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-MSMQ-IIS-Integration" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-MSMQ-IIS-Integration~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-MSMQ" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-MSMQ~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Natural-Language-Support-Asia-And-Africa" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Natural-Language-Support-Asia-And-Africa~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Natural-Language-Support-English" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Natural-Language-Support-English~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Natural-Language-Support-Europe-And-Latin-America" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Natural-Language-Support-Europe-And-Latin-America~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Natural-Language-Support-French" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Natural-Language-Support-French~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Natural-Language-Support-German" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Natural-Language-Support-German~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Natural-Language-Support-Japanese" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Natural-Language-Support-Japanese~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-NET-Framework-35" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-NET-Framework-35~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Network-Access-Protection" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Network-Access-Protection~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Network-And-Sharing-Center" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Network-And-Sharing-Center~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-NetworkProjection" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-NetworkProjection~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Notepad" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Notepad~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-NT-Virtual-DOS-Machine" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-NT-Virtual-DOS-Machine~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-OpenGL" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-OpenGL~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Parental-Control" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Parental-Control~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Peer-Networking" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Peer-Networking~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Performance-Monitoring" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Performance-Monitoring~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Personalization-UI" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Personalization-UI~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Personalize-Handwriting-Recognition" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Personalize-Handwriting-Recognition~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Printing-Spooler-And-Support" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Printing-Spooler-And-Support~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Quality-Of-Service" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Quality-Of-Service~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-RAS-Connection-Manager-Administration-Kit" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-RAS-Connection-Manager-Administration-Kit~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Registry-Editor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Registry-Editor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Registry-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Registry-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Remote-Access-Service" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Remote-Access-Service~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Remote-Assistance" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Remote-Assistance~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-RIP" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-RIP~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Security-Tools" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Security-Tools~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Sensors-Proximity-And-Location" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Sensors-Proximity-And-Location~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Services-Management-Console" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Services-Management-Console~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Shared-Folders-UI" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Shared-Folders-UI~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Shell-Accessories" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Shell-Accessories~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Simple-Network-Management-Protocol" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Simple-Network-Management-Protocol~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Simple-TCPIP-Services" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Simple-TCPIP-Services~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Simplified-Chinese-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Simplified-Chinese-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Simplified-Chinese-Input-Method-Editor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Simplified-Chinese-Input-Method-Editor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-SMB-Witness-Service" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-SMB-Witness-Service~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Snipping-Tool" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Snipping-Tool~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Sticky-Notes" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Sticky-Notes~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Storage-Spaces" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Storage-Spaces~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Sync-Center" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Sync-Center~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Task-Manager" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Task-Manager~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Telephony-API-Client" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Telephony-API-Client~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Telnet-Client" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Telnet-Client~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Telnet-Server" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Telnet-Server~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-TIFF-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-TIFF-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Traditional-Chinese-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Traditional-Chinese-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Traditional-Chinese-Input-Method-Editor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Traditional-Chinese-Input-Method-Editor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Troubleshooting" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Troubleshooting~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-TrueType-Fonts" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-TrueType-Fonts~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Trusted-Platform-Module" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Trusted-Platform-Module~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-TV-Tuner-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-TV-Tuner-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Unified-Write-Filter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Unified-Write-Filter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-USB-UI-Support" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-USB-UI-Support~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-UWF-AntiMalware" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-UWF-AntiMalware~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-UWF-SCEP-Support" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-UWF-SCEP-Support~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Video-For-Windows" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Video-For-Windows~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WCF-35-HTTP-Activation" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WCF-35-HTTP-Activation~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WCF-35-Non-HTTP-Activation" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WCF-35-Non-HTTP-Activation~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WCF-45-HTTP-Activation" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WCF-45-HTTP-Activation~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WCF-45-MSMQ-Activation" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WCF-45-MSMQ-Activation~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WCF-45-Pipe-Activation" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WCF-45-Pipe-Activation~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WCF-45-TCP-Activation" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WCF-45-TCP-Activation~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WCF-45-TCP-Port-Sharing" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WCF-45-TCP-Port-Sharing~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WebDAV" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WebDAV~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Application-Compatibility" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Application-Compatibility~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Audio-User-Interface" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Audio-User-Interface~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Authorization-Manager" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Authorization-Manager~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Biometrics" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Biometrics~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Command-Line-Utilities" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Command-Line-Utilities~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Data-Access-Components-SQL" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Data-Access-Components-SQL~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Embedded-Standard-Startup-Screens" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Embedded-Standard-Startup-Screens~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Mail" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Mail~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Media-Player" version="12.0.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Media-Player~31bf3856ad364e35~amd64~~12.0.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Media-Video-Codecs" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Media-Video-Codecs~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Photo-Viewer" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Photo-Viewer~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Recovery-Center" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Recovery-Center~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Recovery-Disc" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Recovery-Disc~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Security-Center" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Security-Center~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Speech" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Speech~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Tablet-Applications" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Tablet-Applications~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-Windows-Update-Standalone-Installer" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-Windows-Update-Standalone-Installer~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-WordPad" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-WordPad~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-XPS-DocWriter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-XPS-DocWriter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="WinEmb-XPS-Viewer" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\FeaturePack\WinEmb-XPS-Viewer~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Feature Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Ksfilter" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Ksfilter~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Monitor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Monitor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bth" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bth~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bthaudhid" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bthaudhid~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bthhfenum" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bthhfenum~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bthleenum" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bthleenum~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bthmtpenum" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bthmtpenum~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bthpan" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bthpan~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bthprint" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bthprint~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Bthspp" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Bthspp~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-C-Bluetooth" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-C-Bluetooth~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Hidbth" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Hidbth~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Hidbthle" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Hidbthle~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Mdmbtmdm" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Mdmbtmdm~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Tdibth" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Tdibth~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Wdma-Bt" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Wdma-Bt~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-C-PnpPrinters" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-C-PnpPrinters~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-C-Printer" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-C-Printer~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Ntprint" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Ntprint~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Ntprint4" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Ntprint4~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Vdrvroot" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Vdrvroot~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Vhdmp" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Vhdmp~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Netbrdg" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Netbrdg~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Wdma-Usb" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Wdma-Usb~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Wdmaudio" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Wdmaudio~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Winusb" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Winusb~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Netpacer" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Netpacer~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Netpgm" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Netpgm~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Prnms002" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Prnms002~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Prnms003" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Prnms003~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Prnms004" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Prnms004~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Prnms005" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Prnms005~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Prnms006" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Prnms006~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Ramdisk" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Ramdisk~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Ndiscap" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Ndiscap~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-C-Sensor" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-C-Sensor~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Locationprovider" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Locationprovider~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Sensorsalsdriver" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Sensorsalsdriver~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Sensorshidclassdriver" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Sensorshidclassdriver~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Sensorsservicedriver" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Sensorsservicedriver~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Spaceport" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Spaceport~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-C-TransferCable" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-C-TransferCable~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Msdri" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Msdri~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Netrndis" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Netrndis~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-INF-Netirda" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Driver\Microsoft-Windows-Embedded-INF-Netirda~31bf3856ad364e35~amd64~~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Driver" topLevel="false" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-LanguagePack-Package" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="de-DE" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\LanguagePack\Microsoft-Windows-Embedded-LanguagePack-Package~31bf3856ad364e35~amd64~de-DE~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Language Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-LanguagePack-Package" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="en-US" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\LanguagePack\Microsoft-Windows-Embedded-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Language Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-LanguagePack-Package" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="fr-FR" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\LanguagePack\Microsoft-Windows-Embedded-LanguagePack-Package~31bf3856ad364e35~amd64~fr-FR~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Language Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-LanguagePack-Package" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="ja-JP" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\LanguagePack\Microsoft-Windows-Embedded-LanguagePack-Package~31bf3856ad364e35~amd64~ja-JP~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Language Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-LanguagePack-Package" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="ko-KR" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\LanguagePack\Microsoft-Windows-Embedded-LanguagePack-Package~31bf3856ad364e35~amd64~ko-KR~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Language Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-LanguagePack-Package" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="zh-CN" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\LanguagePack\Microsoft-Windows-Embedded-LanguagePack-Package~31bf3856ad364e35~amd64~zh-CN~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Language Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Microsoft-Windows-Embedded-LanguagePack-Package" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="zh-HK" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\LanguagePack\Microsoft-Windows-Embedded-LanguagePack-Package~31bf3856ad364e35~amd64~zh-HK~6.2.9200.16384.emd" />
+            <ew:moduleInfo releaseType="Language Pack" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2794861" version="6.2.2.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Hotfix\Package_for_KB2794861~31bf3856ad364e35~amd64~~6.2.2.0.cab" />
+            <ew:moduleInfo releaseType="Hotfix" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2798804" version="6.2.3.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Hotfix\Package_for_KB2798804~31bf3856ad364e35~amd64~~6.2.3.0.cab" />
+            <ew:moduleInfo releaseType="Hotfix" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2727528" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2727528~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2729462" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2729462~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2737084" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2737084~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2753842" version="6.2.1.1" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2753842~31bf3856ad364e35~amd64~~6.2.1.1.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2757638" version="6.2.1.2" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2757638~31bf3856ad364e35~amd64~~6.2.1.2.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2761465" version="6.2.1.4" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2761465~31bf3856ad364e35~amd64~~6.2.1.4.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2778930" version="6.2.1.1" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2778930~31bf3856ad364e35~amd64~~6.2.1.1.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2785220" version="6.2.1.1" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\SecurityUpdate\Package_for_KB2785220~31bf3856ad364e35~amd64~~6.2.1.1.cab" />
+            <ew:moduleInfo releaseType="Security Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2756872" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2756872~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2768703" version="6.2.1.1" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2768703~31bf3856ad364e35~amd64~~6.2.1.1.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2769165" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2769165~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2769166" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2769166~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2770917" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2770917~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2774195" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2774195~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2777294" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2777294~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2779562" version="6.2.1.1" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2779562~31bf3856ad364e35~amd64~~6.2.1.1.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2779768" version="6.2.1.1" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2779768~31bf3856ad364e35~amd64~~6.2.1.1.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2780541" version="6.2.1.0" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2780541~31bf3856ad364e35~amd64~~6.2.1.0.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="install">
+            <ew:moduleIdentity name="Package_for_KB2785094" version="6.2.1.2" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:source location="%distributionshareroot%\6.2\9200.16384\amd64\modules\Update\Package_for_KB2785094~31bf3856ad364e35~amd64~~6.2.1.2.cab" />
+            <ew:moduleInfo releaseType="Update" />
+        </ew:module>
+        <ew:module action="configure">
+            <ew:moduleIdentity name="EmbeddedCore64" version="6.2.9200.16384" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" />
+            <ew:moduleInfo releaseType="Product" />
+        </ew:module>
+    </ew:servicing>
+    <ew:answerFileInfo catalogPath="C:\Windows Embedded Catalog" processorArchitecture="amd64" osVersion="6.2.9200.16384" />
+</unattend>
